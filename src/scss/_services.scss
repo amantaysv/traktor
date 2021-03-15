@@ -1,0 +1,54 @@
+.services {
+   padding: 166px 250px 120px;
+
+   &__title {
+      margin-bottom: 60px;
+   }
+
+   &__block {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &__card {
+      width: 25%;
+      height: 180px;
+      background: #393F47;
+      border: 1px solid black;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 128px;
+      box-sizing: border-box;
+      color: white;
+      position: relative;
+
+      &::before {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background: url(../images/services/airplane-white.svg);
+         width: 30px;
+         height: 30px;
+         content: "";
+      }
+
+      &:hover {
+         background: $gold;
+         cursor: pointer;
+
+         &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #fff url(../images/services/airplane-black.svg) center center/30px 30px no-repeat;
+         }
+      }
+   }
+}

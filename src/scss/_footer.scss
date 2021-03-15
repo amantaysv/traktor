@@ -1,0 +1,28 @@
+.footer {
+   background: $gold;
+   width: 100%;
+   padding: 60px 250px;
+
+   .row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .col {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+
+         &-1 {
+            align-self: flex-end;
+         }
+      }
+   }
+
+   &__text {
+      color: #fff;
+
+      &-black {
+         color: #000;
+      }
+   }
+}

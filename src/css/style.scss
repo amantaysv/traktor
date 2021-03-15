@@ -1,0 +1,43 @@
+@import "../scss/variables";
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: 'Roboto', sans-serif;
+}
+
+body {
+   background: $dark;
+}
+
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+.title {
+   color: #fff;
+   font-size: 40px;
+   position: relative;
+   text-transform: uppercase;
+
+   &::before {
+      content: '';
+      position: absolute;
+      width: 90px;
+      height: 6px;
+      top: -40px;
+      left: 0;
+      background: $gold;
+   }
+}
+
+@import "../scss/header";
+@import "../scss/home";
+@import "../scss/about-us";
+@import "../scss/services";
+@import "../scss/company";
+@import "../scss/footer"

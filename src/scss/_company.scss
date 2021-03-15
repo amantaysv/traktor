@@ -1,0 +1,53 @@
+.company {
+   padding: 80px 250px 80px;
+   margin-bottom: 120px;
+   background: linear-gradient(90deg, $dark 40%, #393F47 40% 60%, $dark 60%);
+
+   .text {
+      padding-top: 46px;
+   }
+
+   .row {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+   }
+
+   &__descr {
+      font-size: 16px;
+      color: #fff;
+      max-width: 450px;
+   }
+
+   &__block {
+      display: flex;
+      flex-wrap: wrap;
+      width: 600px;
+   }
+
+   &__card {
+      width: 200px;
+      height: 160px;
+      background: #fff;
+      text-transform: uppercase;
+      border: 1px solid $gold;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__header {
+      color: $dark;
+      font-size: 64px;
+      font-weight: bold;
+   }
+
+   &__main {
+      font-size: 18px;
+   }
+
+   &__footer {
+      font-size: 12px;
+   }
+}
